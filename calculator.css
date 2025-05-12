@@ -1,0 +1,110 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    font-family: 'Orbitron', sans-serif;
+}
+
+#main-cal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #121212;
+}
+
+tr{
+    width: 40%;
+}
+
+td, th {
+    font-size: 1.5rem;
+    background-color: #333;
+    color: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    transition: all 0.2s ease-in-out;
+    user-select: none;
+}
+
+td:hover, th:hover {
+    background-color: #555;
+    transform: scale(1.05);
+}
+
+th {
+    border-radius: 50px;
+}
+
+#main {
+    width: 95%;
+    height: 60px;
+    background-color: #1a1a1a;
+    color: #00ffcc;
+    text-align: right;
+    padding: 10px 15px;
+    font-size: 2rem;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    box-shadow: inset 0 0 10px #00ffcc;
+    opacity: 1;
+}
+
+#cal {
+    width: 17%;
+    border-radius: 10px;
+    animation: mymove 5s infinite;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    background-color: #232B2B;
+    color: whitesmoke;
+
+}
+
+.parts {
+    background-color: #ff6347; /* tomato */
+    color: white;
+}
+
+.parts:hover {
+    background-color: #ff8266;
+}
+
+.operator {
+    background-color: #4CAF50;
+}
+
+.operator:hover {
+    background-color: #66BB6A;
+}
+
+.equal {
+    background-color: #2196F3;
+}
+
+.equal:hover {
+    background-color: #42A5F5;
+}
+
+@keyframes mymove {
+    50% {
+        box-shadow: 10px 20px 30px #232B2B;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #cal {
+        width: 90%;
+    }
+
+    #main {
+        font-size: 1.5rem;
+    }
+
+    td, th {
+        font-size: 1.2rem;
+        padding: 15px;
+    }
+}
